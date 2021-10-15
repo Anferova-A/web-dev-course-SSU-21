@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana;
+}
+
+.header{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.poems{
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.biography{
+    width: 50%;
+    border-left: 2px solid rgb(47, 163, 202);
+    box-sizing: border-box;
+    padding: 7px;
+    text-align: left;
+    font-family: Lucida Calligraphy;
+}
+
+.biography-nav{
+    box-sizing: border-box;
+    float: right;
+    border: 2px dashed rgb(47, 163, 202);
+    padding: 30px;
+    text-align: right;
+}
+
+.poems, .biography, .biography-nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+a {
+    color: rgb(33, 174, 221);
+}
+
+a:visited {
+    color: rgb(212, 159, 212);
+}
+
+a:hover {
+    color: rgb(202, 92, 202);
+}
+
+.contact{
+    text-align: center;
+}
