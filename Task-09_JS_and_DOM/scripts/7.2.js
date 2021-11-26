@@ -7,12 +7,12 @@ function formatStringToTableHTML(){
     try {
         parsedInput = parseInput(input);
     } catch (error) {
-        errorOutput.value = "Invalid input";
+        errorOutput.value = "Не очень правильный ввод";
         return;
     }
 
     if(!validateSizes(parsedInput[0], parsedInput[1])){
-        errorOutput.value = "Invalid input";
+        errorOutput.value = "Не очень правильный ввод";
     }
 
     let array = getTableArray(parsedInput[0], parsedInput[1], parsedInput[2]);
@@ -34,7 +34,7 @@ function parseInput(input){
 
 function formatStringToTable(rows, columns, text){
     if(!validateSizes(rows, columns)){
-        return "Invalid input";
+        return "Не очень правильный ввод";
     }
 
     let array = getTableArray(rows, columns, text);

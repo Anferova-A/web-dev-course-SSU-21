@@ -10,14 +10,15 @@
 </head>
 
 <body>
-    <h1>Задание 9   	&#127872</h1>
+    <h1>Задание 9 &#127872</h1>
     <article class="tasks">
         <div>
             <h2>7.1 - Форматирование телефонного номера</h2>
             <p>Введите номер телефона, разделяя цифры пробелом.</p>
             <p>Пример: 9 0 0 1 1 1 2 2 3 3</p>
-            <nav>Ввод: <input type="text" id="phone_input" class="input">
-                <button name="ok7.1" onclick="toPhoneNumberHTML()">&#9989</button> <button name="reset7.1" onclick="reset('phone_input', 'phone_output')">&#10060</button>
+            <nav>Ввод: <input type="text" id="phone_input" class="input" onchange="toPhoneNumberHTML()">
+                <button name="ok7.1" onclick="toPhoneNumberHTML()">&#9989</button> <button name="reset7.1"
+                    onclick="reset('phone_input', 'phone_output')">&#10060</button>
             </nav>
             <p>Результат: <output type="text" id="phone_output" class="output"></p>
         </div>
@@ -26,8 +27,9 @@
             <h2>7.2 - Форматирование строки в таблицу</h2>
             <p>Введите кол-во строк и столбцов, и текст.</p>
             <p>Пример: 5 4 Привет, мир!</p>
-            <nav>Ввод: <input type="text" id="string-table_input" class="input">
-                <button name="ok7.2" onclick="formatStringToTableHTML()">&#9989</button> <button name="reset7.2" onclick="reset('string-table_input', 'string-table_error_output', 'string-table_output')">&#10060</button>
+            <nav>Ввод: <input type="text" id="string-table_input" class="input" onchange="formatStringToTableHTML()">
+                <button name="ok7.2" onclick="formatStringToTableHTML()">&#9989</button> <button name="reset7.2"
+                    onclick="reset('string-table_input', 'string-table_error_output', 'string-table_output')">&#10060</button>
             </nav>
             <p>Результат: <output type="text" id="string-table_error_output" class="output"></output></p>
             <section id="string-table_output" class="output"></section>
@@ -36,8 +38,9 @@
         <div>
             <h2>7.3 - Формула для (a+b)^n</h2>
             <p>Введите степень суммы.</p>
-            <nav>Ввод: <input type="text" id="formula_input" class="input">
-                <button name="ok7.3" onclick="getBinomFormulaHTML()">&#9989</button> <button name="reset7.3" onclick="reset('formula_input', 'formula_output')">&#10060</button>
+            <nav>Ввод: <input type="text" id="formula_input" class="input" onchange="getBinomFormulaHTML()">
+                <button name="ok7.3" onclick="getBinomFormulaHTML()">&#9989</button> <button name="reset7.3"
+                    onclick="reset('formula_input', 'formula_output')">&#10060</button>
             </nav>
             <p>Результат: <output type="text" id="formula_output" class="output"></output></p>
         </div>

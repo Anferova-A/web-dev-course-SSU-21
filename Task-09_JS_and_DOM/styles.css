@@ -69,6 +69,10 @@
     font-weight: 700;
     text-shadow: none;
     font-size: 16;
+    word-break: normal;
+  }
+
+  #formula_output{
     word-break: break-all;
   }
 

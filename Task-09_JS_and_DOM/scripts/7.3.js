@@ -1,12 +1,13 @@
 function getBinomFormulaHTML(){
     let input = document.getElementById("formula_input").value;
-    let value = Number.isInteger(Number.parseInt(input)) ? BigInt(input) : '';
+    let valueInt = Number.parseInt(input);
+    let value = Number.isInteger(valueInt) ? BigInt(valueInt) : '';
     document.getElementById("formula_output").innerHTML = getBinomFormula(value);
 }
 
 function getBinomFormula(pow){
-    if(typeof pow != "bigint") return 'Invalid input (input argument should has BigInt type)';
-    if(pow > 200n || pow < -200n) return 'Invalid input (input value should be from -200 to 200)';
+    if(typeof pow != "bigint") return 'Не очень правильный ввод (пожалуйста, дайте мне целое число)';
+    if(pow > 200n || pow < -200n) return 'Не очень правильный ввод (число должно быть от -200 до 200)';
     if(pow == 0) return '1';
 
     let n = abs(pow);
