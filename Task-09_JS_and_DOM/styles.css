@@ -47,13 +47,50 @@
       background-color: rgb(123, 201, 177);
       border-radius: 20px;
       margin-bottom: 20px;
+      outline-style: dotted;
+      outline-color:rgb(210, 228, 213);
+      outline-width:4px;
   }
 
   input{
     border: 3px solid #cf5eca;
     background:rgb(230, 218, 229);
     border-radius: 18px;
+    outline-color: rgb(141, 19, 131);
+    color: #249433; 
+    font-family: "URW Chancery L, cursive";
+    font-weight: 700;
   }
+
+  output{
+    color: #0b742a; 
+    font-family: "URW Chancery L, cursive";
+    font-weight: 700;
+  }
+
+  button{
+    width: max-content;
+    height: 30px;
+    font-size: 14px;
+    background-color: rgb(231, 199, 226);
+    border: 2px solid #cf5eca;
+	border-radius: 50%;
+    touch-action: manipulation;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(167, 37, 156);
+    outline-color: rgb(141, 19, 131);
+  }
+
+  button:hover {
+    background-color: #cf5eca;
+  }
+
+  button:active {
+    background-color: #cf5eca;
+    box-shadow: 0 1px rgb(167, 37, 156);
+    transform: translateY(4px);
+  }
+
 
   article {
     flex: 1 200px;
