@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+</head>
+
+<body>
+    <h1>Задание 9   	&#127872</h1>
+    <article class="tasks">
+        <div>
+            <h2>7.1 - Форматирование телефонного номера</h2>
+            <p>Введите номер телефона, разделяя цифры пробелом.</p>
+            <p>Пример: 9 0 0 1 1 1 2 2 3 3</p>
+            <form>Ввод: <input type="text" id="phone_input" onchange="pageToPhoneFormat()" class="input">
+                <button name="ok7.1">&#9989</button> <button name="reset7.1">&#10060</button>
+            </form>
+            <p>Результат: <output type="text" id="phone_output" class="output"></p>
+        </div>
+
+        <div>
+            <h2>7.2 - Форматирование строки в таблицу</h2>
+            <p>Введите кол-во строк и столбцов, и текст.</p>
+            <p>Пример: 5 4 Привет, мир!</p>
+            <form>Ввод: <input type="text" id="string-table_input" onchange="pageFormatStringToTable()" class="input">
+                <button name="ok7.2">&#9989</button> <button name="reset7.2">&#10060</button>
+            </form>
+            <p>Результат: <output type="text" id="string-table_error_output" class="output"></output></p>
+            <section id="string-table_output" class="output"></section>
+        </div>
+
+        <div>
+            <h2>7.3 - Формула для (a+b)^n</h2>
+            <p>Введите степень суммы.</p>
+            <form>Ввод: <input type="text" id="string-table_input" onchange="pageFormatStringToTable()" class="input">
+                <button name="ok7.3">&#9989</button> <button name="reset7.3">&#10060</button>
+            </form>
+            <p>Результат: <output type="text" id="string-table_error_output" class="output"></output></p>
+        </div>
+    </article>
+</body>
+
+</html>
