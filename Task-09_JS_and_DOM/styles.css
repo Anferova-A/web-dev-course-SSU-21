@@ -43,7 +43,7 @@
 
   div{
       width: 470px;
-      height: 280px;
+      height: fit-content;
       background-color: rgb(123, 201, 177);
       border-radius: 20px;
       margin-bottom: 20px;
@@ -63,10 +63,25 @@
   }
 
   output{
-    color: #0b742a; 
-    font-family: "URW Chancery L, cursive";
+    width: 450;
+    color: #862abb; 
+    font-family: "Comic Sans MS";
     font-weight: 700;
+    text-shadow: none;
+    font-size: 16;
+    word-break: break-all;
   }
+
+  table{
+    color: #862abb; 
+    font-family: "Comic Sans MS";
+    font-weight: 700;
+    text-shadow: none;
+    font-size: 16; 
+    margin: auto;
+  }
+
+  
 
   button{
     width: max-content;
