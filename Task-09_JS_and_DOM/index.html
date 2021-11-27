@@ -38,7 +38,8 @@
         <div>
             <h2>7.3 - Формула для (a+b)^n</h2>
             <p>Введите степень суммы.</p>
-            <nav>Ввод: <input type="text" id="formula_input" class="input" onchange="getBinomFormulaHTML()">
+            <nav>Ввод: <input type="number" id="formula_input" class="input" onchange="getBinomFormulaHTML()" min="-200"
+                    max="200">
                 <button name="ok7.3" onclick="getBinomFormulaHTML()">&#9989</button> <button name="reset7.3"
                     onclick="reset('formula_input', 'formula_output')">&#10060</button>
             </nav>
