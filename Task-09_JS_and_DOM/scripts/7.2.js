@@ -1,21 +1,22 @@
 function formatStringToTableHTML(){
-    let input = document.getElementById("string-table_input").value.split(' ');
-    let errorOutput = document.getElementById("string-table_error_output");
-    errorOutput.value = "";
+    let rows = document.getElementById("table_rows_input").value;
+    let columns = document.getElementById("table_columns_input").value;
+    let text = document.getElementById("table_text_input").value;
 
-    let parsedInput;
-    try {
-        parsedInput = parseInput(input);
-    } catch (error) {
-        errorOutput.value = "Не очень правильный ввод";
+    let errorOutput = document.getElementById("string-table_error_output");
+    
+    errorOutput.value = "";
+    if(rows == ''){
+        errorOutput.value = 'Я не знаю сколько нужно строк :(';
         return;
     }
-
-    if(!validateSizes(parsedInput[0], parsedInput[1])){
-        errorOutput.value = "Не очень правильный ввод";
+    else if(columns == ''){
+        errorOutput.value = 'Я не знаю сколько нужно столбцов :(';
+        return;
     }
+    
 
-    let array = getTableArray(parsedInput[0], parsedInput[1], parsedInput[2]);
+    let array = getTableArray(rows,columns, text);
     document.getElementById("string-table_output").innerHTML = getHTMLTable(array);
 }
 

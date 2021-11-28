@@ -27,9 +27,17 @@
             <h2>7.2 - Форматирование строки в таблицу</h2>
             <p>Введите кол-во строк и столбцов, и текст.</p>
             <p>Пример: 5 4 Привет, мир!</p>
-            <nav>Ввод: <input type="text" id="string-table_input" class="input" onchange="formatStringToTableHTML()">
-                <button name="ok7.2" onclick="formatStringToTableHTML()">&#9989</button> <button name="reset7.2"
-                    onclick="reset('string-table_input', 'string-table_error_output', 'string-table_output')">&#10060</button>
+            <nav>
+                <p>
+                    Строк: <input type="number" id="table_rows_input" class="input" min="1">
+                    Столбцов: <input type="number" id="table_columns_input" class="input" min="1">
+                </p>
+                <p>
+                    Текст: <input type="text" id="table_text_input" class="input">
+                    <button name="ok7.2" onclick="formatStringToTableHTML()">&#9989</button> <button name="reset7.2"
+                        onclick="reset('table_rows_input','table_columns_input','table_text_input', 'string-table_error_output', 'string-table_output')">&#10060</button>
+
+                </p>
             </nav>
             <p>Результат: <output type="text" id="string-table_error_output" class="output"></output></p>
             <section id="string-table_output" class="output"></section>
