@@ -31,7 +31,7 @@ Feel like a student! The teacher resets marks - try to catch everything. Your fi
 
 ## Rules of the game
 
-### All you need is to deftly turn in the direction of the flying assessment! To do this, you only need 2 keys - left and right! Если ты поймал оценку - то тебе прибавится +1 балл. Максимум - 100. Чем больше баллов ты набрал, тем ближе к максимальной оценке на экзамене!
+### All you need is to deftly turn in the direction of the flying assessment! To do this, you only need 2 keys - left and right! If you caught the score, then you will get +1 point. Maximum - 100. The more points you score, the closer to the maximum score on the exam!
 
 
 <br>
