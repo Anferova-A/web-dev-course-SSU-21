@@ -53,5 +53,5 @@ The game is controlled only by tap the left and right keys. This changes the pos
 
 ### Installation
 ---
-1. Clone the repository
-2. Install all dependencies using ``` npm install ``` command.
+-> Clone the repository <-
+
